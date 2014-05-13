@@ -1,10 +1,10 @@
 Soundcloud logo contest
 =======================
 
-Author: Jorge Pino <jpino@zeptocode.com>
-Date: 2014-05-13
+* Author: Jorge Pino
+* Date: 2014-05-13
 
-This C program (`soundcloud.c`) implements a very simple solution to the [Soundcloud logo problem](https://developers.soundcloud.com/blog/buzzwords-contest). It compares by brute force the Soundcloud logo sequence with every sequence of 84 numbers from the big file. The goodness of a sequence is measured by the [sum of absolute differences](http://en.wikipedia.org/wiki/Sum_of_absolute_differences).
+This C program `soundcloud.c` implements a very simple solution to the [Soundcloud logo problem](https://developers.soundcloud.com/blog/buzzwords-contest). It compares by brute force the Soundcloud logo sequence with every sequence of 84 numbers from the big file. The goodness of a sequence is measured by the [sum of absolute differences](http://en.wikipedia.org/wiki/Sum_of_absolute_differences).
 
 
 ## Instructions
