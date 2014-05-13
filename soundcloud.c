@@ -3,6 +3,7 @@
 #include <string.h>
 
 #define CHUNK 1000000
+#define GOODNESS 194
 
 int main()
 {
@@ -61,13 +62,13 @@ int main()
                 evaluation += abs(logo[x] - (buffer[offset+x] - '0'));
 
                 // Performance tweak: we are not interested in sequences with
-                // evaluations greater than 195.
-                if (evaluation > 195) {
+                // evaluations greater than GOODNESS.
+                if (evaluation > GOODNESS) {
                     break;
                 }
             }
 
-            if (evaluation < 196) {
+            if (evaluation <= GOODNESS) {
                 // Print good enough sequences
                 printf("eval: %d | offset: %d | sequence: %.84s\n",
                        evaluation,
